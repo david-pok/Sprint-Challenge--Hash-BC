@@ -51,3 +51,31 @@ GET - Returns the full chain in JSON format
 
 `/api/totals/`
 GET - Returns the current total for each ID in the chain
+
+
+#### [API Endpoints]:
+
+`/api/mine`
+POST - Submit your name and a proposed proof for validation.  If the action is unsuccessful, you will receive an error message.  If successful, it will return:
+
+{
+    'index': block.index,
+    'transactions': str(block.transactions),
+    'proof': block.proof,
+    'previous_hash': block.previous_hash,
+}
+
+Failure:
+{"message": "Proof valid but already submitted."}
+
+-or-
+
+{"message": "Invalid Proof"}
+
+
+`/api/full_chain`
+GET - Returns the full chain in JSON format
+
+
+`/api/totals/`
+GET - Returns the current total for each ID in the chain
