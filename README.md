@@ -48,6 +48,8 @@ For the blockchain portion of the challenge, you will be writing code for a new 
 
 Your goal is to mine at least one coin.  Keep in mind that with many people competing over the same coins, this may take a long time.  By our math, we expect that an average solution should be the first to find a solution at least once in an hour or two of mining.  
 
+
+
 ## Minimum Viable Product
 
 #### [Hash Tables](https://github.com/LambdaSchool/Sprint-Challenge--Hash-BC/tree/master/hashtables)
